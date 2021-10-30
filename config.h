@@ -116,7 +116,7 @@ static const char *colorname[] = {
     [15] = "#f1efee", /* white   */
 
     /* special colors */
-    [256] = "#0D1117", /* background */
+    [256] = "#1B1D1E", /* background */
     [257] = "#a8a19f", /* foreground */
 };
 
@@ -179,7 +179,7 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
+	{ XK_ANY_MOD,           Button3, selpaste,       {.i = 0},      1 },
 	{ ShiftMask,            Button4, ttysend,        {.s = "\033[5;2~"} },
 	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
 	{ ShiftMask,            Button5, ttysend,        {.s = "\033[6;2~"} },
